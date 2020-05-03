@@ -1,0 +1,17 @@
+{
+  "name": "two-sum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "two-sum.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jeremy Sim <jeremy_sim@hotmail.com> (https://github.com/jsim0809)",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^7.1.2"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
+}
