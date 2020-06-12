@@ -1,4 +1,4 @@
-# Algorithms
+# Toolbox
 
 This is my personal repository of useful (and efficient) tools and functions.
 
