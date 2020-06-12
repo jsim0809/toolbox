@@ -1,7 +1,7 @@
 # Algorithms
 
-This is my personal repository of interesting or useful algorithms and data structures.
+This is my personal repository of useful (and efficient) tools and functions.
 
 ## Table of contents
 
-TwoSum: Given an array of integers and a target, find the two integers from the array that add up to the target.
+fisherYates: Use the inside-out Fisher-Yates algorithm to create a random ordering of integers.
