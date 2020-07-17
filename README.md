@@ -12,3 +12,6 @@ This is my personal repository of useful (and efficient) tools and functions.
 
 #### LightboxModal.jsx, lightbox-modal.css  
 > A simple lightbox component, for use in React. 
+
+#### shine.css
+> Create an animated "shine" effect on an element, as if a light were passing over it.

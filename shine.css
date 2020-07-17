@@ -1,0 +1,61 @@
+/* Creates a shine effect, as if a light were passing over an element from left to right */
+
+#THE_THING_YOU_WANT_TO_BE_SHINY {
+  mix-blend-mode: screen;
+}
+
+/* Create an svg layer that sits underneath that object. This is the "shine layer". */
+
+/* In JSX, the shine layer looks something like this:
+
+<svg id="shine" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 528.872 53.448">
+  <defs>
+
+    <mask id="shine-mask">
+      // Here is the "shape" of your mask -- maybe it traces the letters in the image above.
+    </mask>
+
+    <linearGradient id="myLinearGradient1"
+      x1="0%" y1="0%"
+      x2="100%" y2="0%"
+      spreadMethod="pad">
+      <stop offset="0%" stopColor="#ffffff" stopOpacity="0" />
+      <stop offset="25%" stopColor="#ffffff" stopOpacity="0" />
+      <stop offset="50%" stopColor="#ffffff" stopOpacity="0.6" />
+      <stop offset="70%" stopColor="#ffffff" stopOpacity="0" />
+      <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
+    </linearGradient>
+
+  </defs>
+
+  <rect id="shine-rect" x="-550" y="0" width="550" height="55" mask="url(#shine-mask)" style={{ fill: 'url(#myLinearGradient1)', strokeWidth: '0' }} />
+
+</svg> */
+
+/* Then in the CSS file, do this: */
+
+#shine-mask {
+  fill: #fff;
+}
+
+:root {
+  --shine-delay: 4.5s;
+  --shine-duration: 1.75s;
+}
+
+#shine-rect {
+  animation-name: shine;
+  animation-delay: var(--shine-delay);
+  animation-duration: var(--shine-duration);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes shine {
+  0% {
+    x: -400;
+  }
+  100% {
+    x: 400;
+  }
+}
