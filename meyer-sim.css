@@ -10,7 +10,7 @@
 	Differences from Eric Meyer's CSS Reset 2.0:
 	- <a> tags have styling (color, underline) removed.
 	- <strong>, <em>, <b>, <i>, and <u> tags are allowed to style text.
-	- <img> tags are displayed in block style instead of inline, and have a max-width of their parent container.
+	- <img> tags are displayed in block style instead of inline.
 */
 
 html, body, div, span, applet, object, iframe,
@@ -61,5 +61,4 @@ a {
 }
 img {
 	display: block;
-	max-width: 100%;
 }
